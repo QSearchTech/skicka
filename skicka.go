@@ -555,7 +555,7 @@ func getOAuthClient(tokenCacheFilename string, tryBrowserAuth bool,
 			AuthURL:  "https://accounts.google.com/o/oauth2/auth",
 			TokenURL: "https://accounts.google.com/o/oauth2/token",
 		},
-		RedirectURL: "urn:ietf:wg:oauth:2.0:oob",
+		RedirectURL: "http://localhost:1/",
 		Scopes:      []string{"https://www.googleapis.com/auth/drive"},
 	}
 	if config.Google.ClientId != "" {
